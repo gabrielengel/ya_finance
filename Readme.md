@@ -2,7 +2,7 @@
 
 Financial information on stocks, funds, crypto and currencies from multiple sources, including and not limited to Yahoo Finance.
 
-This wrapper was heavily inspired by (Ran Aroussi)[https://aroussi.com/]'s (yfinance)[https://pypi.org/project/yfinance/] python package.
+This wrapper was heavily inspired by [Ran Aroussi](https://aroussi.com/)'s [yfinance](https://pypi.org/project/yfinance/) python package.
 
 
 ## ☢️ IMPORTANT LEGAL DISCLAIMER
@@ -24,9 +24,9 @@ This wrapper was heavily inspired by (Ran Aroussi)[https://aroussi.com/]'s (yfin
   The author is not responsible for the use or misuse of this code and the information collected from any of the sources.
 ```
 
-(Contribute)[Contribute.md]
-(YahooEndpoints)[YahooEndpoints.md]
-(Find Tickers on Yahoo)[https://finance.yahoo.com/lookup/all?s=india]
+[Contribute](Contribute.md)
+[YahooEndpoints](YahooEndpoints.md)
+[Find Tickers on Yahoo](https://finance.yahoo.com/lookup/all?s=india)
 
 
 # 📺 CLI usage
