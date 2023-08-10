@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require_relative '../lib/ya_finance'
+
+def to_upcase(str)
+  str.split('_').map(&:capitalize).join('')
+end
+
+if ARGV[0] && ARGV[1] && ARGV[2]
+  puts YaFinance.new(ARGV[0]).send(ARGV[1].to_sym).send(ARGV[2].to_sym).to_json
+else
+  puts "Usage:"
+  puts "$ yafin TICKER context action"
+end

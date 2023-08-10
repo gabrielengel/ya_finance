@@ -1,0 +1,30 @@
+PATH
+  remote: .
+  specs:
+    ya_finance (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    ast (2.4.2)
+    mocha (2.1.0)
+      ruby2_keywords (>= 0.0.5)
+    oga (3.4)
+      ast
+      ruby-ll (~> 2.1)
+    ruby-ll (2.1.3)
+      ansi
+      ast
+    ruby2_keywords (0.0.5)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  mocha
+  oga (~> 3.4)
+  ya_finance!
+
+BUNDLED WITH
+   2.4.1
