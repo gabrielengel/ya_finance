@@ -1,3 +1,4 @@
+require 'excon'
 class YaFinance::Http
   ROOT_URL = 'https://finance.yahoo.com/'
   QUERY_URL = "https://query2.finance.yahoo.com"
