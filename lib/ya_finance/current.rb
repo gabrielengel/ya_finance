@@ -24,10 +24,20 @@ class YaFinance
       YaFinance::Scrapper::Holders.process(response)
     end
     def options
-      fetch_v7("options/#{@ticker}")['optionChain']['result'][0]['options']
+      response = fetch_v7("options/#{@ticker}")['optionChain']['result'][0]['options'][0]
+      {
+        puts: remap_options(response['puts']),
+        calls: remap_options(response['calls']),
+      }
     end
 
     private
-
+    def remap_options(opts)
+      opts.map{|opt|
+        opt['expirationParsed'] = Time.at(opt['expiration']) unless opt['expiration'].nil?
+        opt['lastTradeDateParsed'] = Time.at(opt['lastTradeDate']) unless opt['lastTradeDate'].nil?
+        opt
+      }
+    end
   end
 end

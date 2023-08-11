@@ -32,9 +32,7 @@ class YaFinance::Past
   end
 
   def capital_gains
-    require 'byebug'
     evs = fetch_v8("chart/#{@ticker}?events=capitalGains#{OPTIONS}")['chart']['result'][0]['events']
-    debugger
   end
 
   def actions

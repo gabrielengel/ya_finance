@@ -46,8 +46,8 @@ This wrapper was heavily inspired by [Ran Aroussi](https://aroussi.com/)'s [yfin
 ```ruby
 ticker = YaFinance.new('AAPL')
 ticker.current.price # => ✅ ['USD', 23.50]
-ticker.current.holders # => 🟡 @TODO: organize repsonse
-ticker.current.options # => ✅ [contracts]
+ticker.current.holders # => ✅ {insiders_percent, intitutions_percent, institutions_float, institutions_amount}
+ticker.current.options # => ✅ { puts: [contracts], calls: [contracts] ]
 ticker.current.market_cap #=> ✅ ["USD",2862466203648]
 
 ticker.meta.short_name # => ✅ "Apple Inc."

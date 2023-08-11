@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "net/http/persistent" # @TODO: how to remove?
 require "net/http"
 require "open-uri"
 require "ostruct"
@@ -27,4 +26,3 @@ end
 
 Dir[File.join(__dir__, 'ya_finance', '*.rb')].each { |file| require file }
 Dir[File.join(__dir__, 'ya_finance/scrapper', '*.rb')].each { |file| require file }
-Dir[File.join(__dir__, 'ya_finance/insider_trading', '*.rb')].each { |file| require file }

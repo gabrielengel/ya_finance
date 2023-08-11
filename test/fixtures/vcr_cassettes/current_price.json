@@ -1,0 +1,90 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://query2.finance.yahoo.com/v6/finance/quoteSummary/VALE3.SA?modules=price",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "YaFin/0.0.1"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Cache-Control": [
+            "public, max-age=1, stale-while-revalidate=9"
+          ],
+          "Vary": [
+            "Origin,Accept-Encoding"
+          ],
+          "Y-Rid": [
+            "6v71u99idamh7"
+          ],
+          "X-Yahoo-Request-Id": [
+            "6v71u99idamh7"
+          ],
+          "X-Request-Id": [
+            "f3cb098d-4d98-46c1-82f8-bfa640dac5bf"
+          ],
+          "Content-Length": [
+            "1317"
+          ],
+          "X-Envoy-Upstream-Service-Time": [
+            "2"
+          ],
+          "Date": [
+            "Thu, 10 Aug 2023 21:44:06 GMT"
+          ],
+          "Server": [
+            "ATS"
+          ],
+          "X-Envoy-Decorator-Operation": [
+            "finance-company-fundamentals-api--mtls-production-bf1.finance-k8s.svc.yahoo.local:4080/*"
+          ],
+          "Age": [
+            "1"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000"
+          ],
+          "Referrer-Policy": [
+            "no-referrer-when-downgrade"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Expect-Ct": [
+            "max-age=31536000, report-uri=\"http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only\""
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ]
+        },
+        "body": {
+          "encoding": "ASCII-8BIT",
+          "string": "{\"quoteSummary\":{\"symbols\":null,\"result\":[{\"price\":{\"maxAge\":1,\"preMarketChange\":{},\"preMarketPrice\":{},\"postMarketChange\":{},\"postMarketPrice\":{},\"regularMarketChangePercent\":{\"raw\":-0.011817516,\"fmt\":\"-1.18%\"},\"regularMarketChange\":{\"raw\":-0.7900009,\"fmt\":\"-0.79\"},\"regularMarketTime\":1691698050,\"priceHint\":{\"raw\":2,\"fmt\":\"2\",\"longFmt\":\"2\"},\"regularMarketPrice\":{\"raw\":66.06,\"fmt\":\"66.06\"},\"regularMarketDayHigh\":{\"raw\":67.18,\"fmt\":\"67.18\"},\"regularMarketDayLow\":{\"raw\":65.94,\"fmt\":\"65.94\"},\"regularMarketVolume\":{\"raw\":28243100,\"fmt\":\"28.24M\",\"longFmt\":\"28,243,100.00\"},\"averageDailyVolume10Day\":{},\"averageDailyVolume3Month\":{},\"regularMarketPreviousClose\":{\"raw\":66.85,\"fmt\":\"66.85\"},\"regularMarketSource\":\"DELAYED\",\"regularMarketOpen\":{\"raw\":66.81,\"fmt\":\"66.81\"},\"strikePrice\":{},\"openInterest\":{},\"exchange\":\"SAO\",\"exchangeName\":\"São Paulo\",\"exchangeDataDelayedBy\":15,\"marketState\":\"POSTPOST\",\"quoteType\":\"EQUITY\",\"symbol\":\"VALE3.SA\",\"underlyingSymbol\":null,\"shortName\":\"VALE        ON      NM\",\"longName\":\"Vale S.A.\",\"currency\":\"BRL\",\"quoteSourceName\":\"Delayed Quote\",\"currencySymbol\":\"R$\",\"fromCurrency\":null,\"toCurrency\":null,\"lastMarket\":null,\"volume24Hr\":{},\"volumeAllCurrencies\":{},\"circulatingSupply\":{},\"marketCap\":{\"raw\":286580801536,\"fmt\":\"286.58B\",\"longFmt\":\"286,580,801,536.00\"}}}],\"error\":null}}"
+        }
+      },
+      "recorded_at": "Thu, 10 Aug 2023 21:44:07 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

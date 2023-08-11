@@ -5,11 +5,13 @@ class YaFinance
     class Holders
       def self.process(html)
         doc = Oga.parse_xml(html)
-        #TODO: organize result tables
-        holders = doc.css('[data-test] td').map{|e| e.text }
-        institutional = doc.css('.BdT td').map{|e| e.text } # 0
-        funds = doc.css('.BdT td').map{|e| e.text } # 1
-        {holders: holders, institutional: institutional, funds: funds}
+        table = doc.css('[data-test] td').map{|e| e.text }
+        {
+          insiders_percent: table[0].to_f,
+          intitutions_percent: table[2].to_f,
+          institutions_float: table[4].to_f,
+          institutions_amount: table[6].to_i
+        }
       end
     end
   end
