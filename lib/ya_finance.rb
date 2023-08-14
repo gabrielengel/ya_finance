@@ -8,7 +8,7 @@ require "csv"
 require 'bigdecimal'
 
 class YaFinance
-  VERSION = "0.0.6"
+  VERSION = "0.0.7"
 
   def initialize(ticker, options={})
     @ticker = ticker

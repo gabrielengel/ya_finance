@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "ya_finance"
-  s.version     = "0.0.6"
+  s.version     = "0.0.7"
   s.summary     = "Financial Information 2023 - reads from Yahoo Finances"
   s.description = "Financial Information consumer with CLI working in 2023 - reads from Yahoo Finances"
   s.authors     = ["Gabriel Fonseca Engel"]

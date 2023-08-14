@@ -1,0 +1,90 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://query2.finance.yahoo.com/v6/finance/quoteSummary/AAPL?modules=quoteType",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "YaFin/0.0.6"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Cache-Control": [
+            "public, max-age=1, stale-while-revalidate=9"
+          ],
+          "Vary": [
+            "Origin,Accept-Encoding"
+          ],
+          "Y-Rid": [
+            "0jdj131idl4hp"
+          ],
+          "X-Yahoo-Request-Id": [
+            "0jdj131idl4hp"
+          ],
+          "X-Request-Id": [
+            "dd8a95d3-b084-42f4-8303-09ec9bfc675f"
+          ],
+          "Content-Length": [
+            "423"
+          ],
+          "X-Envoy-Upstream-Service-Time": [
+            "1"
+          ],
+          "Date": [
+            "Mon, 14 Aug 2023 20:44:41 GMT"
+          ],
+          "Server": [
+            "ATS"
+          ],
+          "X-Envoy-Decorator-Operation": [
+            "finance-company-fundamentals-api--mtls-production-bf1.finance-k8s.svc.yahoo.local:4080/*"
+          ],
+          "Age": [
+            "0"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000"
+          ],
+          "Referrer-Policy": [
+            "no-referrer-when-downgrade"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Expect-Ct": [
+            "max-age=31536000, report-uri=\"http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only\""
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ]
+        },
+        "body": {
+          "encoding": "ASCII-8BIT",
+          "string": "{\"quoteSummary\":{\"symbols\":null,\"result\":[{\"quoteType\":{\"exchange\":\"NMS\",\"quoteType\":\"EQUITY\",\"symbol\":\"AAPL\",\"underlyingSymbol\":\"AAPL\",\"shortName\":\"Apple Inc.\",\"longName\":\"Apple Inc.\",\"firstTradeDateEpochUtc\":345479400,\"timeZoneFullName\":\"America/New_York\",\"timeZoneShortName\":\"EDT\",\"uuid\":\"8b10e4ae-9eeb-3684-921a-9ab27e4d87aa\",\"messageBoardId\":\"finmb_24937\",\"gmtOffSetMilliseconds\":-14400000,\"maxAge\":1}}],\"error\":null}}"
+        }
+      },
+      "recorded_at": "Mon, 14 Aug 2023 20:44:41 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

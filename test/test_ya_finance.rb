@@ -1,4 +1,5 @@
 require_relative 'helper'
+
 class TestYaFinance < Test::Unit::TestCase
   def test_class_loaded
     assert_equal(YaFinance.class, Class)

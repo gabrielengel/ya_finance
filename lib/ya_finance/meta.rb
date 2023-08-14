@@ -5,7 +5,7 @@ class YaFinance
     include Http::FetchV6
     include Http::FetchRoot
 
-    def initialize(ticker, options)
+    def initialize(ticker, options={})
       @ticker = ticker
       @options = options
     end
@@ -19,16 +19,24 @@ class YaFinance
       fetch_v6('price')['price']['shortName']
     end
 
-    def shares
-      # ...
+    def statistics
+      fetch_v6('defaultKeyStatistics')['defaultKeyStatistics']
     end
 
-    def info
-      # ...
+    def financial
+      fetch_v6('financialData')['financialData']
     end
 
-    def sustainability
-      # ...
+    def summary
+      fetch_v6('summaryDetail')['summaryDetail']
+    end
+
+    def profile
+      fetch_v6('assetProfile')['assetProfile']
+    end
+
+    def quote_type
+      fetch_v6('quoteType')['quoteType']
     end
   end
 end

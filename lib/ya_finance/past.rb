@@ -32,7 +32,7 @@ class YaFinance::Past
   end
 
   def capital_gains
-    evs = fetch_v8("chart/#{@ticker}?events=capitalGains#{OPTIONS}")['chart']['result'][0]['events']
+    # evs = fetch_v8("chart/#{@ticker}?events=capitalGains#{OPTIONS}")['chart']['result'][0]['events']
   end
 
   def actions

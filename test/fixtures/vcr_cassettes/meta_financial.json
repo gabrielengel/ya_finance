@@ -1,0 +1,90 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://query2.finance.yahoo.com/v6/finance/quoteSummary/AAPL?modules=financialData",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "YaFin/0.0.6"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Cache-Control": [
+            "public, max-age=1, stale-while-revalidate=9"
+          ],
+          "Vary": [
+            "Origin,Accept-Encoding"
+          ],
+          "Y-Rid": [
+            "2uj6ud1idl3ni"
+          ],
+          "X-Yahoo-Request-Id": [
+            "2uj6ud1idl3ni"
+          ],
+          "X-Request-Id": [
+            "3e2cd9e6-3097-4969-9465-743c0c0009e5"
+          ],
+          "Content-Length": [
+            "1634"
+          ],
+          "X-Envoy-Upstream-Service-Time": [
+            "2"
+          ],
+          "Date": [
+            "Mon, 14 Aug 2023 20:30:41 GMT"
+          ],
+          "Server": [
+            "ATS"
+          ],
+          "X-Envoy-Decorator-Operation": [
+            "finance-company-fundamentals-api--mtls-production-bf1.finance-k8s.svc.yahoo.local:4080/*"
+          ],
+          "Age": [
+            "1"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000"
+          ],
+          "Referrer-Policy": [
+            "no-referrer-when-downgrade"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Expect-Ct": [
+            "max-age=31536000, report-uri=\"http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only\""
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ]
+        },
+        "body": {
+          "encoding": "ASCII-8BIT",
+          "string": "{\"quoteSummary\":{\"symbols\":null,\"result\":[{\"financialData\":{\"maxAge\":86400,\"currentPrice\":{\"raw\":179.46,\"fmt\":\"179.46\"},\"targetHighPrice\":{\"raw\":240.0,\"fmt\":\"240.00\"},\"targetLowPrice\":{\"raw\":149.0,\"fmt\":\"149.00\"},\"targetMeanPrice\":{\"raw\":201.18,\"fmt\":\"201.18\"},\"targetMedianPrice\":{\"raw\":201.0,\"fmt\":\"201.00\"},\"recommendationMean\":{\"raw\":2.0,\"fmt\":\"2.00\"},\"recommendationKey\":\"buy\",\"numberOfAnalystOpinions\":{\"raw\":40,\"fmt\":\"40\",\"longFmt\":\"40\"},\"totalCash\":{\"raw\":62482001920,\"fmt\":\"62.48B\",\"longFmt\":\"62,482,001,920\"},\"totalCashPerShare\":{\"raw\":3.996,\"fmt\":\"4\"},\"ebitda\":{\"raw\":123957002240,\"fmt\":\"123.96B\",\"longFmt\":\"123,957,002,240\"},\"totalDebt\":{\"raw\":109280002048,\"fmt\":\"109.28B\",\"longFmt\":\"109,280,002,048\"},\"quickRatio\":{\"raw\":0.814,\"fmt\":\"0.81\"},\"currentRatio\":{\"raw\":0.982,\"fmt\":\"0.98\"},\"totalRevenue\":{\"raw\":383932989440,\"fmt\":\"383.93B\",\"longFmt\":\"383,932,989,440\"},\"debtToEquity\":{\"raw\":181.305,\"fmt\":\"181.30%\"},\"revenuePerShare\":{\"raw\":24.22,\"fmt\":\"24.22\"},\"returnOnAssets\":{\"raw\":0.20896,\"fmt\":\"20.90%\"},\"returnOnEquity\":{\"raw\":1.60093,\"fmt\":\"160.09%\"},\"grossProfits\":{\"raw\":170782000000,\"fmt\":\"170.78B\",\"longFmt\":\"170,782,000,000\"},\"freeCashflow\":{\"raw\":90680500224,\"fmt\":\"90.68B\",\"longFmt\":\"90,680,500,224\"},\"operatingCashflow\":{\"raw\":113071996928,\"fmt\":\"113.07B\",\"longFmt\":\"113,071,996,928\"},\"earningsGrowth\":{\"raw\":0.05,\"fmt\":\"5.00%\"},\"revenueGrowth\":{\"raw\":-0.014,\"fmt\":\"-1.40%\"},\"grossMargins\":{\"raw\":0.43449003,\"fmt\":\"43.45%\"},\"ebitdaMargins\":{\"raw\":0.32286,\"fmt\":\"32.29%\"},\"operatingMargins\":{\"raw\":0.29231,\"fmt\":\"29.23%\"},\"profitMargins\":{\"raw\":0.24681,\"fmt\":\"24.68%\"},\"financialCurrency\":\"USD\"}}],\"error\":null}}"
+        }
+      },
+      "recorded_at": "Mon, 14 Aug 2023 20:30:41 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

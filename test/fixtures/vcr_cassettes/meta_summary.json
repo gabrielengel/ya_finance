@@ -1,0 +1,90 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://query2.finance.yahoo.com/v6/finance/quoteSummary/AAPL?modules=summaryDetail",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "YaFin/0.0.6"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=utf-8"
+          ],
+          "Cache-Control": [
+            "public, max-age=1, stale-while-revalidate=9"
+          ],
+          "Vary": [
+            "Origin,Accept-Encoding"
+          ],
+          "Y-Rid": [
+            "42qla1lidl3q6"
+          ],
+          "X-Yahoo-Request-Id": [
+            "42qla1lidl3q6"
+          ],
+          "X-Request-Id": [
+            "23b50f76-05f4-4fa6-9d7b-4245f69c267a"
+          ],
+          "Content-Length": [
+            "2213"
+          ],
+          "X-Envoy-Upstream-Service-Time": [
+            "3"
+          ],
+          "Date": [
+            "Mon, 14 Aug 2023 20:32:05 GMT"
+          ],
+          "Server": [
+            "ATS"
+          ],
+          "X-Envoy-Decorator-Operation": [
+            "finance-company-fundamentals-api--mtls-production-bf1.finance-k8s.svc.yahoo.local:4080/*"
+          ],
+          "Age": [
+            "1"
+          ],
+          "Strict-Transport-Security": [
+            "max-age=31536000"
+          ],
+          "Referrer-Policy": [
+            "no-referrer-when-downgrade"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Expect-Ct": [
+            "max-age=31536000, report-uri=\"http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only\""
+          ],
+          "X-Xss-Protection": [
+            "1; mode=block"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ]
+        },
+        "body": {
+          "encoding": "ASCII-8BIT",
+          "string": "{\"quoteSummary\":{\"symbols\":null,\"result\":[{\"summaryDetail\":{\"maxAge\":1,\"priceHint\":{\"raw\":2,\"fmt\":\"2\",\"longFmt\":\"2\"},\"previousClose\":{\"raw\":177.79,\"fmt\":\"177.79\"},\"open\":{\"raw\":177.97,\"fmt\":\"177.97\"},\"dayLow\":{\"raw\":177.305,\"fmt\":\"177.30\"},\"dayHigh\":{\"raw\":179.69,\"fmt\":\"179.69\"},\"regularMarketPreviousClose\":{\"raw\":177.79,\"fmt\":\"177.79\"},\"regularMarketOpen\":{\"raw\":177.97,\"fmt\":\"177.97\"},\"regularMarketDayLow\":{\"raw\":177.305,\"fmt\":\"177.30\"},\"regularMarketDayHigh\":{\"raw\":179.69,\"fmt\":\"179.69\"},\"dividendRate\":{\"raw\":0.96,\"fmt\":\"0.96\"},\"dividendYield\":{\"raw\":0.0054,\"fmt\":\"0.54%\"},\"exDividendDate\":{\"raw\":1683849600,\"fmt\":\"2023-05-12\"},\"payoutRatio\":{\"raw\":0.156,\"fmt\":\"15.60%\"},\"fiveYearAvgDividendYield\":{\"raw\":0.87,\"fmt\":\"0.87\"},\"beta\":{\"raw\":1.286802,\"fmt\":\"1.29\"},\"trailingPE\":{\"raw\":30.468594,\"fmt\":\"30.47\"},\"forwardPE\":{\"raw\":27.23217,\"fmt\":\"27.23\"},\"volume\":{\"raw\":40729758,\"fmt\":\"40.73M\",\"longFmt\":\"40,729,758\"},\"regularMarketVolume\":{\"raw\":40729758,\"fmt\":\"40.73M\",\"longFmt\":\"40,729,758\"},\"averageVolume\":{\"raw\":57302609,\"fmt\":\"57.3M\",\"longFmt\":\"57,302,609\"},\"averageVolume10days\":{\"raw\":63387600,\"fmt\":\"63.39M\",\"longFmt\":\"63,387,600\"},\"averageDailyVolume10Day\":{\"raw\":63387600,\"fmt\":\"63.39M\",\"longFmt\":\"63,387,600\"},\"bid\":{\"raw\":179.37,\"fmt\":\"179.37\"},\"ask\":{\"raw\":179.18,\"fmt\":\"179.18\"},\"bidSize\":{\"raw\":1000,\"fmt\":\"1k\",\"longFmt\":\"1,000\"},\"askSize\":{\"raw\":800,\"fmt\":\"800\",\"longFmt\":\"800\"},\"marketCap\":{\"raw\":2822672744448,\"fmt\":\"2.82T\",\"longFmt\":\"2,822,672,744,448\"},\"yield\":{},\"ytdReturn\":{},\"totalAssets\":{},\"expireDate\":{},\"strikePrice\":{},\"openInterest\":{},\"fiftyTwoWeekLow\":{\"raw\":124.17,\"fmt\":\"124.17\"},\"fiftyTwoWeekHigh\":{\"raw\":198.23,\"fmt\":\"198.23\"},\"priceToSalesTrailing12Months\":{\"raw\":7.351993,\"fmt\":\"7.35\"},\"fiftyDayAverage\":{\"raw\":187.4426,\"fmt\":\"187.44\"},\"twoHundredDayAverage\":{\"raw\":160.8378,\"fmt\":\"160.84\"},\"trailingAnnualDividendRate\":{\"raw\":0.93,\"fmt\":\"0.93\"},\"trailingAnnualDividendYield\":{\"raw\":0.0052308906,\"fmt\":\"0.52%\"},\"navPrice\":{},\"currency\":\"USD\",\"fromCurrency\":null,\"toCurrency\":null,\"lastMarket\":null,\"coinMarketCapLink\":null,\"volume24Hr\":{},\"volumeAllCurrencies\":{},\"circulatingSupply\":{},\"algorithm\":null,\"maxSupply\":{},\"startDate\":{},\"tradeable\":false}}],\"error\":null}}"
+        }
+      },
+      "recorded_at": "Mon, 14 Aug 2023 20:32:06 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

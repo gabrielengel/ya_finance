@@ -51,9 +51,11 @@ ticker.current.options # => ✅ { puts: [contracts], calls: [contracts] ]
 ticker.current.market_cap #=> ✅ ["USD",2862466203648]
 
 ticker.meta.short_name # => ✅ "Apple Inc."
-ticker.meta.shares # 🟡 @TODO
-ticker.meta.info # 🟡 @TODO
-ticker.meta.sustainability # 🟡 @TODO
+ticker.meta.statistics # ✅ {'52WeekChange', 'beta', ...}
+ticker.meta.financial # ✅ {'recommendationKey','quickRatio', ...}
+ticker.meta.summary # ✅ {'dividendYield','fiftyTwoWeekLow', ...}
+ticker.meta.profile # ✅ {'country','address1', ...}
+ticker.meta.quote_type # ✅ {'exchange', 'quoteType', ...}
 ticker.meta.earnings_calendar # => ✅ [{date, estimate, reported, surprise}]
 
 ticker.past.history # => 🟡 @TODO: Process
